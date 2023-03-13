@@ -10,4 +10,9 @@ public final class MemoryServerStorage implements ServerStorage {
     public void insertServer() {
 
     }
+
+    @Override
+    public void removeServer() {
+
+    }
 }

@@ -8,4 +8,9 @@ public final class MongoServerStorage implements ServerStorage {
     public void insertServer() {
 
     }
+
+    @Override
+    public void removeServer() {
+
+    }
 }
