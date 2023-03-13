@@ -1,0 +1,20 @@
+subprojects {
+
+    description 'A TuxCraft Universe module'
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok:1.18.26'
+        annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+        implementation 'com.github.Minestom.Minestom:Minestom:'+minestom_version
+
+        compileOnly 'org.jetbrains:annotations:23.0.0'
+    }
+}

@@ -1,0 +1,16 @@
+plugins {
+    id 'application'
+}
+
+dependencies {
+    implementation 'com.github.novastosha:BetterArguments:174ecff8d8'
+
+    implementation project(':modules:api')
+    implementation project(':modules:storage')
+
+    compileOnly 'com.rabbitmq:amqp-client:5.16.0'
+}
+
+application {
+    mainClass.set("eu.tuxcraft.universe.bootstrap.BootstrapMain")
+}

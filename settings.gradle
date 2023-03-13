@@ -1,0 +1,10 @@
+rootProject.name = 'Universe'
+
+include('modules')
+include 'modules:bootstrap'
+findProject(':modules:bootstrap')?.name = 'bootstrap'
+include 'modules:api'
+findProject(':modules:api')?.name = 'api'
+include 'modules:storage'
+findProject(':modules:storage')?.name = 'storage'
+
